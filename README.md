@@ -34,4 +34,4 @@ To run a project from the command line you can use:
 
 ### Parcel Database
 
-[![Parcel Database](github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/ParcelDb.png)]()
+[![Parcel Database](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/ParcelDb.png)]()
