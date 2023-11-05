@@ -20528,3 +20528,44 @@ FROM "EventQueue" AS "e"
 System.Exception: Queue is Empty.
    at DataAccess.Repositories.QueueRepo.QueueRepository.PopEvent() in C:\Users\Mohamed.Abdullah\Downloads\temp\Private\Tech Challange\EventsAPI\Data\DataAccess\Repositories\QueueRepo\QueueRepository.cs:line 67
    at ConsumerWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Mohamed.Abdullah\Downloads\temp\Private\Tech Challange\EventsAPI\Consumer\ConsumerWorker\Worker.cs:line 31
+2023-11-05 18:16:34.580 +13:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-11-05 18:16:34.699 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Parcels" (
+    "ParcelId" INTEGER NOT NULL CONSTRAINT "PK_Parcels" PRIMARY KEY,
+    "StatusCode" TEXT NULL,
+    "PickedUpDateTime" TEXT NULL,
+    "DeliveredDateTime" TEXT NULL
+);
+2023-11-05 18:16:34.704 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Events" (
+    "EventId" INTEGER NOT NULL CONSTRAINT "PK_Events" PRIMARY KEY,
+    "ParcelId" INTEGER NOT NULL,
+    "Type" INTEGER NOT NULL,
+    "CreatedDateTimeUtc" TEXT NOT NULL,
+    "DeviceTransactionId" INTEGER NULL,
+    "DeviceId" INTEGER NULL,
+    "UserId" TEXT NULL,
+    "CarrierId" INTEGER NULL,
+    "RunId" TEXT NOT NULL,
+    CONSTRAINT "FK_Events_Parcels_ParcelId" FOREIGN KEY ("ParcelId") REFERENCES "Parcels" ("ParcelId") ON DELETE CASCADE
+);
+2023-11-05 18:16:34.709 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Events_ParcelId" ON "Events" ("ParcelId");
+2023-11-05 18:16:34.727 +13:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-05 18:16:34.730 +13:00 [INF] Hosting environment: Development
+2023-11-05 18:16:34.732 +13:00 [INF] Content root path: C:\ScanEventExercise\ScanEventExercise\Consumer\ConsumerWorker
+2023-11-05 18:16:36.929 +13:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."EventId", "e"."MaxRetriesReached", "e"."Payload", "e"."PopDatetime", "e"."ProcessAttempts"
+FROM "EventQueue" AS "e"
+2023-11-05 18:16:37.036 +13:00 [ERR] Queue is Empty.
+System.Exception: Queue is Empty.
+   at DataAccess.Repositories.QueueRepo.QueueRepository.PopEvent() in C:\ScanEventExercise\ScanEventExercise\Data\DataAccess\Repositories\QueueRepo\QueueRepository.cs:line 67
+   at ConsumerWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\ScanEventExercise\ScanEventExercise\Consumer\ConsumerWorker\Worker.cs:line 31
+2023-11-05 18:16:39.110 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."EventId", "e"."MaxRetriesReached", "e"."Payload", "e"."PopDatetime", "e"."ProcessAttempts"
+FROM "EventQueue" AS "e"
+2023-11-05 18:16:39.125 +13:00 [ERR] Queue is Empty.
+System.Exception: Queue is Empty.
+   at DataAccess.Repositories.QueueRepo.QueueRepository.PopEvent() in C:\ScanEventExercise\ScanEventExercise\Data\DataAccess\Repositories\QueueRepo\QueueRepository.cs:line 67
+   at ConsumerWorker.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\ScanEventExercise\ScanEventExercise\Consumer\ConsumerWorker\Worker.cs:line 31

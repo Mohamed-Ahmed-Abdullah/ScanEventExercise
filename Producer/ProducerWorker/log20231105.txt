@@ -17966,3 +17966,60 @@ SELECT "s"."Key", "s"."Value"
 FROM "Settings" AS "s"
 WHERE "s"."Key" = 'Cursor'
 LIMIT 1
+2023-11-05 18:16:35.244 +13:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-11-05 18:16:35.363 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "EventQueue" (
+    "EventId" INTEGER NOT NULL CONSTRAINT "PK_EventQueue" PRIMARY KEY AUTOINCREMENT,
+    "Payload" TEXT NOT NULL,
+    "PopDatetime" TEXT NULL,
+    "ProcessAttempts" INTEGER NOT NULL,
+    "MaxRetriesReached" INTEGER NOT NULL
+);
+2023-11-05 18:16:35.368 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Settings" (
+    "Key" TEXT NOT NULL CONSTRAINT "PK_Settings" PRIMARY KEY,
+    "Value" TEXT NOT NULL
+);
+2023-11-05 18:16:35.372 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Settings" ("Key", "Value")
+VALUES ('Cursor', '0');
+2023-11-05 18:16:35.388 +13:00 [INF] Worker running at: "2023-11-05T18:16:35.3839229+13:00"
+2023-11-05 18:16:35.617 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Key", "s"."Value"
+FROM "Settings" AS "s"
+WHERE "s"."Key" = 'Cursor'
+LIMIT 1
+2023-11-05 18:16:35.742 +13:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-05 18:16:35.745 +13:00 [INF] Hosting environment: Development
+2023-11-05 18:16:35.748 +13:00 [INF] Content root path: C:\ScanEventExercise\ScanEventExercise\Producer\ProducerWorker
+2023-11-05 18:16:36.753 +13:00 [INF] Worker running at: "2023-11-05T18:16:36.7479323+13:00"
+2023-11-05 18:16:36.803 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Key", "s"."Value"
+FROM "Settings" AS "s"
+WHERE "s"."Key" = 'Cursor'
+LIMIT 1
+2023-11-05 18:16:37.828 +13:00 [INF] Worker running at: "2023-11-05T18:16:37.8242586+13:00"
+2023-11-05 18:16:37.834 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Key", "s"."Value"
+FROM "Settings" AS "s"
+WHERE "s"."Key" = 'Cursor'
+LIMIT 1
+2023-11-05 18:16:38.853 +13:00 [INF] Worker running at: "2023-11-05T18:16:38.8474804+13:00"
+2023-11-05 18:16:38.860 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Key", "s"."Value"
+FROM "Settings" AS "s"
+WHERE "s"."Key" = 'Cursor'
+LIMIT 1
+2023-11-05 18:16:39.881 +13:00 [INF] Worker running at: "2023-11-05T18:16:39.8769789+13:00"
+2023-11-05 18:16:39.889 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Key", "s"."Value"
+FROM "Settings" AS "s"
+WHERE "s"."Key" = 'Cursor'
+LIMIT 1
+2023-11-05 18:16:40.910 +13:00 [INF] Worker running at: "2023-11-05T18:16:40.9051128+13:00"
+2023-11-05 18:16:40.919 +13:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Key", "s"."Value"
+FROM "Settings" AS "s"
+WHERE "s"."Key" = 'Cursor'
+LIMIT 1
