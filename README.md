@@ -18,7 +18,7 @@ Make sure you have these installed:
 
 - `Right click on solution > Properties` Make sure you settings looks like this
 
-  [![Parcel Database](Docs\StartSettings.png)]()
+  [![Parcel Database](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/StartSettings.png)]()
 
 - Press `F5` or Run button
 
@@ -32,4 +32,4 @@ To run a project from the command line you can use:
 
 ### Parcel Database
 
-[![Parcel Database](Docs\ParcelDb.png)]()
+[![Parcel Database](github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/ParcelDb.png)]()
