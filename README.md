@@ -28,7 +28,7 @@ To run a project from the command line you can use:
 
 ### Events Queue Database
 
-[![Parcel Database](Docs\EventQueueDb.png)]()
+[![Parcel Database](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/EventQueueDb.png)]()
 
 ### Parcel Database
 
