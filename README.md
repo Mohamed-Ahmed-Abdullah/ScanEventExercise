@@ -16,6 +16,9 @@
 
 ### Demo video
 
+Downlaod the vidoe to be able to view it.
+[![Demo Video](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/DemoVideo.png)](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/DemoScanEventCompressed.mp4)
+
 ### Prerequisites
 
 Make sure you have these installed:
