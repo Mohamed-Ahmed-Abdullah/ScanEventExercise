@@ -1,14 +1,20 @@
 # Welcome to Scan Event Exercise
 
-### Introduction
+## Introduction
+
+### Miro board
 
 > [Miro board link](https://miro.com/app/board/uXjVNT4IwUc=/?share_link_id=95267939321)
 
 [![Overview Diagram](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/OverviewDiagram.png)]()
 
-Solution Overview Document
+### Solution Overview Document
 
 [![Solution Overview Document](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/pdf.png)](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/SolutionOverviewDocument.pdf)
+
+[Download PDF](https://github.com/Mohamed-Ahmed-Abdullah/ScanEventExercise/blob/main/Docs/SolutionOverviewDocument.pdf)
+
+### Demo video
 
 ### Prerequisites
 
