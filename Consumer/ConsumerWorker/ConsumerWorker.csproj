@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ConsumerWorker-637c521a-818e-47a8-b503-0646b4eeb008</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="log20231105.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\..\Data\DataModels\DataModels.csproj" />
+  </ItemGroup>
+</Project>

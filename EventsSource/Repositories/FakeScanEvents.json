@@ -1,0 +1,84 @@
+{
+  "scanEvents": [
+    {
+      "eventId": 83270,
+      "parcelId": 5003,
+      "type": "PICKUP",
+      "createdDateTimeUtc": "2023-11-05T00:58:48.2812616Z",
+      "statusCode": "",
+      "device": {
+        "deviceTransactionId": 83270,
+        "deviceId": 104
+      },
+      "user": {
+        "userId": "NC1001",
+        "carrierId": "NC",
+        "runId": "100"
+      }
+    },
+    {
+      "eventId": 83271,
+      "parcelId": 5003,
+      "type": "STATUS",
+      "createdDateTimeUtc": "2023-11-05T00:58:48.2812616Z",
+      "statusCode": "",
+      "device": {
+        "deviceTransactionId": 83270,
+        "deviceId": 104
+      },
+      "user": {
+        "userId": "NC1001",
+        "carrierId": "NC",
+        "runId": "100"
+      }
+    },
+    {
+      "eventId": 83272,
+      "parcelId": 5003,
+      "type": "SomeOtherUndefinedEventType",
+      "createdDateTimeUtc": "2023-11-05T00:58:48.2812616Z",
+      "statusCode": "",
+      "device": {
+        "deviceTransactionId": 83270,
+        "deviceId": 104
+      },
+      "user": {
+        "userId": "NC1001",
+        "carrierId": "NC",
+        "runId": "100"
+      }
+    },
+    {
+      "eventId": 83273,
+      "parcelId": 5003,
+      "type": "DELIVERY",
+      "createdDateTimeUtc": "2023-11-05T00:58:48.2812616Z",
+      "statusCode": "",
+      "device": {
+        "deviceTransactionId": 83270,
+        "deviceId": 104
+      },
+      "user": {
+        "userId": "NC1001",
+        "carrierId": "NC",
+        "runId": "100"
+      }
+    },
+    {
+      "eventId": 83274,
+      "parcelId": 5004,
+      "type": "PICKUP",
+      "createdDateTimeUtc": "2023-11-05T00:58:48.2812616Z",
+      "statusCode": "",
+      "device": {
+        "deviceTransactionId": 83270,
+        "deviceId": 104
+      },
+      "user": {
+        "userId": "NC1001",
+        "carrierId": "NC",
+        "runId": "100"
+      }
+    }
+  ]
+}
